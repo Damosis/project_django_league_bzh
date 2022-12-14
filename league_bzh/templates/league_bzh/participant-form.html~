@@ -1,9 +1,0 @@
-{% if participant_list %}
-    <ul>
-    {% for participant in participant_list %}
-        <li><a href="/Participant/{{ participant.id }}/">{{ participant.first_name }}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No participants are available.</p>
-{% endif %}
