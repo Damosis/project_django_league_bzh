@@ -29,6 +29,7 @@ Algo classement:
 
 3 points par victoires
 1 points par match nul
+0 point pour Damien
 
 tri par:
 -points
