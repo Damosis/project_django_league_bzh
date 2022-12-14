@@ -1,0 +1,30 @@
+{% if matches_list %}
+<ul>
+  <legend><b>Matches played</b></legend>
+  <br>
+    <table>
+      <tr>
+	<th><b>MATCH NAME</b></th>
+	<th><b>MATCH DATE</b></th>
+	<th><b>LOCAL</b></th>
+	<th><b>VISITOR</b></th>
+	<th><b>MATCH LEAGUE</b></th>
+	<th><b>SCORE LOCAL</b></th>
+	<th><b>SCORE VISITOR</b></th>
+      </tr>
+      {% for m in matches_list %}
+      <tr>
+	<th> {{ m.match_name }}</th>
+	<th> {{ m.match_date }}</th>
+	<th> {{ m.local }}</th>
+	<th> {{ m.visitor }}</th>
+	<th> {{ m.league }}</th>
+	<th> {{ m.score_local }}</th>
+	<th> {{ m.score_visitor }}</th>
+      </tr> 
+      {% endfor %}
+    </table>
+    </ul>
+{% else %}
+    <p>No participants are available.</p>
+{% endif %}

@@ -1,0 +1,24 @@
+<table>
+  <tr>
+    <th><b>FIRSTNAME</b></th>
+    <th><b>LASTNAME</b></th>
+    <th><b>ID</b></th>
+    <th><b>VICTORIES</b></th>
+    <th><b>LOSSES</b></th>
+    <th><b>DRAWS</b></th>
+    <th><b>POINTS</b></th>
+    <th><b>POINTS SCORED</b></th>
+  </tr>
+{% for key, value in participants_dict_matches.items %}
+  <tr>
+    <th> {{ value.4 }}</th>
+    <th> {{ value.5 }}</th>
+    <th> {{ key }}</th>
+    <th> {{ value.0 }}</th>
+    <th> {{ value.1 }}</th>
+    <th> {{ value.2 }}</th>
+    <th> {{ value.3 }}</th>
+    <th> {{ value.6 }}</th>
+  </tr> 
+{% endfor %}
+</table>

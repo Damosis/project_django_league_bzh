@@ -1,0 +1,11 @@
+<form action="" method="post">
+{% csrf_token %}
+<fieldset>
+    <legend><h1>{{ participant.first_name}}{{ " " }}{{ participant.last_name }}</h1></legend>
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+    <label first_name="participant_first_name">{{ "Firstname: " }}{{ participant.first_name }}</label><br>
+    <label last_name="participant_last_name">{{ "Lastname: " }}{{ participant.last_name }}</label><br>
+    <label age="participant_age">{{ "Player age: " }}{{ participant.age }}</label><br>
+    <label reg_date="participant_reg_date">{{ "Player registration date: " }}{{ participant.reg_date }}</label><br>
+</fieldset>
+</form>
