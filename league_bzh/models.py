@@ -10,7 +10,7 @@ class Participant(models.Model):
     reg_date   = models.DateTimeField(default='1970-01-01 00:00:00')
 
     def __str__(self):
-        return '{} {}'.format(self.first_name, self.last_name)
+        return f'{self.first_name} {self.last_name}'
 
 class League(models.Model):
     league_name = models.CharField(default='default league name',max_length=30)
